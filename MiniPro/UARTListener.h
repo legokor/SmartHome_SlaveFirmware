@@ -4,5 +4,5 @@
 class UARTListener
 {
 public:
-	static void ListenerTask(void* takParams);
+	static void UARTListenerTask(void* takParams);
 };

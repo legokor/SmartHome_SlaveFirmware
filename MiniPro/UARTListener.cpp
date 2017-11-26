@@ -2,7 +2,7 @@
 #include "Ques.h"
 #include <IPAddress.h>
 
-void UARTListener::ListenerTask(void * taskParams)
+void UARTListener::UARTListenerTask(void * taskParams)
 {
 	while (true)
 	{
