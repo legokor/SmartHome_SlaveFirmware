@@ -1,6 +1,7 @@
 #include "Sensor.h"
 
 float Sensor::data[6] = { 0, 0, 0, 0, 0, 0 };
+bool Sensor::isLocked = false;
 
 Sensor::Sensor() : mq2(A0), dht(DHTPIN, DHTTYPE)
 {
@@ -53,8 +54,11 @@ void Sensor::ReadSensors()
 }
 
 //A static method, that allows any tasks to read the sensor datas
-float* Sensor::GetData()
+const float* Sensor::GetData()
 {
+	while (Sensor::isLocked);
+	Sensor::isLocked = true;
+	Sensor::isLocked = false;
 	return data;
 }
 

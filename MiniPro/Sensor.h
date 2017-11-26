@@ -14,11 +14,12 @@ private:
 	MQ2 mq2;
 	DHT dht;
 	static float data[6];
+	static bool isLocked;
 	int CoolDown;
 public:
 	Sensor();
 	void Init();
-	static float* GetData();
+	const static float* GetData();
 	void ReadSensors();
 	static void SensorTask(void* taskParams);
 };
