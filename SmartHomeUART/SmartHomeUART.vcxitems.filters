@@ -17,6 +17,9 @@
     <ClCompile Include="D:\Repos\MiniPro\SmartHomeUART\SmartHomeUART.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="D:\Repos\MiniPro\SmartHomeUART\UARTSender.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="$(MSBuildThisFileDirectory)readme.txt" />
@@ -27,6 +30,9 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="D:\Repos\MiniPro\SmartHomeUART\..\MiniPro\UARTListener.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Repos\MiniPro\SmartHomeUART\UARTSender.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

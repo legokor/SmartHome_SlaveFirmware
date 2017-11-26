@@ -7,6 +7,7 @@
 #include "Sensor.h"
 #include "MessageProcess_Task.h"
 #include "UARTListener.h"
+#include "UARTSender.h"
 
 
 // the setup function runs once when you press reset or power the board
@@ -28,11 +29,18 @@ void setup()
 		, 2  // Priority, with 3 (configMAX_PRIORITIES - 1) being the highest, and 0 being the lowest.
 		, NULL
 	);
-	xTaskCreate(UARTListener::ListenerTask
+	xTaskCreate(UARTListener::UARTListenerTask
 		, (const portCHAR *)"UARTListener" 
 		, 128  // This stack size can be checked & adjusted by reading the Stack Highwater
 		, NULL
 		, 3  // Priority, with 3 (configMAX_PRIORITIES - 1) being the highest, and 0 being the lowest.
+		, NULL
+	);
+	xTaskCreate(UARTSender::UARTSenderTask
+		, (const portCHAR *)"UARTListener"
+		, 128  // This stack size can be checked & adjusted by reading the Stack Highwater
+		, NULL
+		, 2  // Priority, with 3 (configMAX_PRIORITIES - 1) being the highest, and 0 being the lowest.
 		, NULL
 	);
 }

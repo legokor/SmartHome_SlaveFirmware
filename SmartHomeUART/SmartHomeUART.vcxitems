@@ -21,9 +21,11 @@
   <ItemGroup>
     <!-- <ClInclude Include="$(MSBuildThisFileDirectory)SmartHomeUART.h" /> -->
     <ClInclude Include="$(MSBuildThisFileDirectory)..\MiniPro\UARTListener.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)UARTSender.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="$(MSBuildThisFileDirectory)..\MiniPro\UARTListener.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)SmartHomeUART.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)UARTSender.cpp" />
   </ItemGroup>
 </Project>
