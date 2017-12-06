@@ -7,20 +7,34 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MiniPro", "MiniPro\MiniPro.
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SmartHomeUART", "SmartHomeUART\SmartHomeUART.vcxitems", "{B87CC4FA-D998-4ED3-81DD-52C56BF61E71}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "WiFi Module", "Smart_Home_v2\Smart_Home_v2.vcxproj", "{526B44DD-6D98-48C4-AC50-C8F1172E135D}"
+EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		SmartHomeUART\SmartHomeUART.vcxitems*{b87cc4fa-d998-4ed3-81dd-52c56bf61e71}*SharedItemsImports = 9
 		SmartHomeUART\SmartHomeUART.vcxitems*{c5f80730-f44f-4478-bdae-6634efc2ca88}*SharedItemsImports = 4
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|ARM = Debug|ARM
 		Debug|x86 = Debug|x86
+		Release|ARM = Release|ARM
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C5F80730-F44F-4478-BDAE-6634EFC2CA88}.Debug|ARM.ActiveCfg = Debug|Win32
 		{C5F80730-F44F-4478-BDAE-6634EFC2CA88}.Debug|x86.ActiveCfg = Debug|Win32
 		{C5F80730-F44F-4478-BDAE-6634EFC2CA88}.Debug|x86.Build.0 = Debug|Win32
+		{C5F80730-F44F-4478-BDAE-6634EFC2CA88}.Release|ARM.ActiveCfg = Release|Win32
 		{C5F80730-F44F-4478-BDAE-6634EFC2CA88}.Release|x86.ActiveCfg = Release|Win32
 		{C5F80730-F44F-4478-BDAE-6634EFC2CA88}.Release|x86.Build.0 = Release|Win32
+		{526B44DD-6D98-48C4-AC50-C8F1172E135D}.Debug|ARM.ActiveCfg = Debug|ARM
+		{526B44DD-6D98-48C4-AC50-C8F1172E135D}.Debug|ARM.Build.0 = Debug|ARM
+		{526B44DD-6D98-48C4-AC50-C8F1172E135D}.Debug|x86.ActiveCfg = Debug|Win32
+		{526B44DD-6D98-48C4-AC50-C8F1172E135D}.Debug|x86.Build.0 = Debug|Win32
+		{526B44DD-6D98-48C4-AC50-C8F1172E135D}.Release|ARM.ActiveCfg = Release|ARM
+		{526B44DD-6D98-48C4-AC50-C8F1172E135D}.Release|ARM.Build.0 = Release|ARM
+		{526B44DD-6D98-48C4-AC50-C8F1172E135D}.Release|x86.ActiveCfg = Release|Win32
+		{526B44DD-6D98-48C4-AC50-C8F1172E135D}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -81,6 +81,8 @@
   </PropertyGroup>
   <ItemGroup>
     <None Include="ClassDiagram.cd" />
+    <None Include="ClassDiagram1.cd" />
+    <None Include="ClassDiagram2.cd" />
     <None Include="MiniPro.ino">
       <FileType>CppCode</FileType>
     </None>
